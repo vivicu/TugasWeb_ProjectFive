@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'app-headerIsmah',
   templateUrl: './headerIsmah.component.html',
   styleUrls: ['./headerIsmah.component.css']

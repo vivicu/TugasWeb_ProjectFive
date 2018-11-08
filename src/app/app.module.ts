@@ -14,6 +14,7 @@ import { RecipeItemIsmahComponent } from './recipeIsmah/recipe-listIsmah/recipe-
 import { ShoppingEditIsmahComponent } from './shopping-listIsmah/shopping-editIsmah/shopping-editIsmah.component';
 
 import { DropdownDirective } from './shared/dropdown.directive';
+import { ShoppingListIsmahService } from './shopping-listIsmah/shopping-listIsmah.service';
 
 @NgModule({
    declarations: [
@@ -30,7 +31,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
    imports: [
       BrowserModule
    ],
-   providers: [],
+   providers: [ShoppingListIsmahService],
    bootstrap: [
       AppComponent
    ]
