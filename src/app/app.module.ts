@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HeaderIsmahComponent } from './headerIsmah/headerIsmah.component';
@@ -16,6 +19,9 @@ import { ShoppingEditIsmahComponent } from './shopping-listIsmah/shopping-editIs
 import { DropdownDirective } from './shared/dropdown.directive';
 import { ShoppingListIsmahService } from './shopping-listIsmah/shopping-listIsmah.service';
 
+import { RecipeStartIsmahComponent } from './recipeIsmah/recipe-startIsmah/recipe-startIsmah.component';
+import { RecipeEditIsmahComponent } from './recipeIsmah/recipe-editIsmah/recipe-editIsmah.component';
+
 @NgModule({
    declarations: [
       AppComponent,
@@ -27,9 +33,14 @@ import { ShoppingListIsmahService } from './shopping-listIsmah/shopping-listIsma
       RecipeItemIsmahComponent,
       ShoppingEditIsmahComponent,
       DropdownDirective,
+      RecipeStartIsmahComponent,
+      RecipeEditIsmahComponent
    ],
    imports: [
-      BrowserModule
+      BrowserModule,
+      FormsModule,
+      HttpModule,
+      AppRoutingModule
    ],
    providers: [ShoppingListIsmahService],
    bootstrap: [

@@ -3,11 +3,13 @@
     <app-recipe-listIsmah></app-recipe-listIsmah>
   </div>
   <div class="col-md-7">
-    <app-recipe-detailIsmah *ngIf="selectedRecipe;else infotext"
+    <!-- <app-recipe-detailIsmah *ngIf="selectedRecipe;else infotext"
     [recipe]="selectedRecipe">
     </app-recipe-detailIsmah>
     <ng-template #infotext>
       <p> Please Select Recipe </p>
-    </ng-template>
+    </ng-template> -->
+    <router-outlet></router-outlet>
+
   </div>
 </div>

@@ -29,6 +29,10 @@ export class RecipeIsmahService {
       this.slsService.addIngredients(ingredients);
     }
 
+    getRecipe(index: number) {
+      return this.recipes[index];
+    }
+
 constructor(private slsService: ShoppingListIsmahService) { }
 
 }
